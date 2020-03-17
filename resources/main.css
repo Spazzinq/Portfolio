@@ -7,7 +7,8 @@ a {
     color: black;
     text-decoration: none;
     border-radius: 5px;
-    transition: all .4s ease; /* Fill time */
+    transition: all .4s ease;
+    /* Fill time */
 }
 
 #socials a {
@@ -18,53 +19,10 @@ a {
 .highlight:hover {
     padding: 10px;
     text-decoration: none;
-    background-color: #cce0ff; /* Switch to complete fill */
-    background-position: 0 2em; /* Remove the highlight shift */
-}
-
-.center {
-    animation: slide 1s forwards cubic-bezier(.25,.1,0,1.02);
-}
-
-/*.main {*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    -ms-transform: translate(-50%, -50%);*/
-/*    transform: translate(-50%, -50%);*/
-/*}*/
-
-.typewriter-disable {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    width: 0; /* Hide until play */
-    border-right: .10vh solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em; /* Adjust as needed */
-    animation:
-            typing 1.5s .3s steps(45, end) forwards, /* type length, delay, frames, keep end effect */
-            blink-caret .7s step-end infinite;
-}
-
-@media screen and (orientation: portrait)  {
-}
-
-@media screen and (orientation: landscape) and (min-device-width: 1200px) {
-}
-
-@keyframes slide {
-    from { top: 50% }
-    to { top: 12% }
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+    background-color: #cce0ff;
+    /* Switch to complete fill */
+    background-position: 0 2em;
+    /* Remove the highlight shift */
 }
 
 header {
@@ -92,24 +50,15 @@ nav a {
     font-size: 2em;
 }
 
-
-
-
-
 .title {
     text-align: center;
     background-color: #efefef;
     padding: 100px 50px 50px;
 }
 
-
-grid-item-centered {
-    
-}
-
 grid-item {
-   animation: slide 1s forwards cubic-bezier(.25,.1,0,1.02);
-   padding: 10px;
+    animation: slide 1s forwards cubic-bezier(.25, .1, 0, 1.02);
+    padding: 10px;
 }
 
 #socials img {
@@ -117,21 +66,17 @@ grid-item {
     opacity: 45%;
 }
 
-
-
-
-
 .highlight {
     background-image:
-    linear-gradient(#cce0ff 30%, transparent 0);
-    background-position: 0 .8em; /* Move the highlight down */
+        linear-gradient(#cce0ff 30%, transparent 0);
+    background-position: 0 .8em;
+    /* Move the highlight down */
 }
 
 header img {
-    max-width: 8.5vh;
+    margin: 10px;
+    max-width: 80px;
 }
-
-
 
 #name {
     font-family: Poppins;
@@ -139,14 +84,11 @@ header img {
     margin: 20px 0;
 }
 
-
-
-#typed, .typed-cursor {
+#typed,
+.typed-cursor {
     font: Poppins;
     font-size: 30px;
 }
-
-
 
 nav ul {
     justify-content: space-evenly;
@@ -156,11 +98,9 @@ body {
     margin: 0;
 }
 
-
-
 #projects {
     color: white;
-    padding: 30px 0 0;
+    padding: 3vh 0 0;
     justify-content: center;
 }
 
@@ -168,10 +108,71 @@ h1 {
     font-size: 50px;
 }
 
-
-
-
+nav li {
+    margin: 10px;
+}
 
 #projects img {
     max-height: 100px;
+}
+
+@media screen and (orientation: portrait),
+(max-width: 700px) {
+
+    .bar-top,
+    .bar-mid,
+    .bar-bottom {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        transition: all .4s ease;
+    }
+
+    .toggled .bar-top {
+        transform: translateY(10px);
+    }
+
+    .toggled .bar-bottom {
+        transform: translateY(-10px);
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+        transition: all .4s ease;
+    }
+
+    nav.toggled {
+        display: block;
+        animation: reveal .5s;
+    }
+
+    #name {
+        font-size: 70px;
+    }
+
+    #logo {
+        display: none;
+    }
+}
+
+@media screen and (orientation: portrait),
+(max-width: 1150px) {
+    #socials {
+        display: none;
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }

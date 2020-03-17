@@ -1,8 +1,19 @@
-<grid-item>
+<script>
+    function toggleBar(x) {
+        x.classList.toggle("toggled");
+        document.getElementById("nav").classList.toggle("toggled");
+    }
+</script>
+<grid-item id="logo">
     <a href="https://spazzinq.org"><img src="https://spazzinq.org/resources/icon.png" alt="Spazzinq logo"></a>
 </grid-item>
 <grid-item>
-    <nav>
+   <div onclick="toggleBar(this)">
+            <div class="bar-top"></div>
+            <div class="bar-mid"></div>
+            <div class="bar-bottom"></div>
+        </div>
+    <nav id="nav">
         <ul>
             <li>
                 <a class="highlight" href="https://github.com/Spazzinq" target="_blank">Developer</a>
@@ -16,8 +27,8 @@
         </ul>
     </nav>
 </grid-item>
-<grid-item>
-    <ul id="socials">
+<grid-item id="socials">
+    <ul style="justify-content: flex-end;">
         <li>
             <a href="https://spazzinq.org/discord" target="_blank"><img style="position: relative; top: -2px;" height="42" width="42" src="https://discordapp.com/assets/41484d92c876f76b20c7f746221e8151.svg" /></a>
         </li>
