@@ -1,0 +1,176 @@
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .4s ease; /* Fill time */
+}
+
+#socials a {
+    margin: 0 10px;
+}
+
+
+.highlight:hover {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cce0ff; /* Switch to complete fill */
+    background-position: 0 2em; /* Remove the highlight shift */
+}
+
+.center {
+    animation: slide 1s forwards cubic-bezier(.25,.1,0,1.02);
+}
+
+/*.main {*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    -ms-transform: translate(-50%, -50%);*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+.typewriter-disable {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    width: 0; /* Hide until play */
+    border-right: .10vh solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation:
+            typing 1.5s .3s steps(45, end) forwards, /* type length, delay, frames, keep end effect */
+            blink-caret .7s step-end infinite;
+}
+
+@media screen and (orientation: portrait)  {
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 1200px) {
+}
+
+@keyframes slide {
+    from { top: 50% }
+    to { top: 12% }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+header {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#socials {
+    justify-content: flex-end;
+}
+
+#socials img:hover {
+    opacity: 100%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+}
+
+
+
+
+
+.title {
+    text-align: center;
+    background-color: #efefef;
+    padding: 100px 50px 50px;
+}
+
+
+grid-item-centered {
+    
+}
+
+grid-item {
+   animation: slide 1s forwards cubic-bezier(.25,.1,0,1.02);
+   padding: 10px;
+}
+
+#socials img {
+    transition: all .4s ease;
+    opacity: 45%;
+}
+
+
+
+
+
+.highlight {
+    background-image:
+    linear-gradient(#cce0ff 30%, transparent 0);
+    background-position: 0 .8em; /* Move the highlight down */
+}
+
+header img {
+    max-width: 8.5vh;
+}
+
+
+
+#name {
+    font-family: Poppins;
+    font-size: 100px;
+    margin: 20px 0;
+}
+
+
+
+#typed, .typed-cursor {
+    font: Poppins;
+    font-size: 30px;
+}
+
+
+
+nav ul {
+    justify-content: space-evenly;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+#projects {
+    color: white;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+
+
+
+#projects img {
+    max-height: 100px;
+}
