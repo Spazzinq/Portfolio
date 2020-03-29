@@ -3,6 +3,7 @@ p {
 }
 
 .content {
+    background-color: #efefef;
     position: relative;
     opacity: 0;
     animation: appear .7s .1s forwards;
@@ -49,6 +50,4 @@ tr:nth-child(even) {
     }
 }
 
-body {
-    background-color: #efefef;
-}
+
