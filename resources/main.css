@@ -176,3 +176,11 @@ nav li {
         opacity: 1
     }
 }
+
+#projects li {
+    transition: all .3s;
+}
+
+#projects li:hover {
+    filter: brightness(.7);
+}
