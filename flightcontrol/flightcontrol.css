@@ -1,6 +1,4 @@
-p {
-    margin-bottom: 3vw;
-}
+
 
 .content {
     background-color: #efefef;
@@ -27,6 +25,11 @@ tr:nth-child(even) {
     background-color: #d8d8d8;
 }
 
+.rainbow {
+    font-weight: bold;
+    animation: rainbow 3s infinite;
+}
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -36,6 +39,32 @@ tr:nth-child(even) {
     to {
         opacity: 1;
         top: 0;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: darkseagreen;
+    }
+
+    60% {
+        color: green;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    100% {
+        color: purple;
     }
 }
 
@@ -50,4 +79,6 @@ tr:nth-child(even) {
     }
 }
 
-
+p {
+    margin: 0;
+}
