@@ -3,8 +3,8 @@
 .content {
     background-color: #efefef;
     position: relative;
-    opacity: 0;
     animation: appear .7s .1s forwards;
+    padding: 0 0 10vh;
 }
 
 table {
@@ -81,4 +81,13 @@ tr:nth-child(even) {
 
 p {
     margin: 0;
+}
+
+#resources {
+    justify-content: center;
+}
+
+#resources li {
+    margin: 30px;
+    font-size: 25px;
 }

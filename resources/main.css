@@ -43,6 +43,7 @@ header {
 ul {
     display: flex;
     list-style-type: none;
+    padding: 0;
 }
 
 nav a {
@@ -95,13 +96,17 @@ nav ul {
 }
 
 body {
+    background-color: #efefef;
     margin: 0;
 }
 
-#projects {
+footer {
+    position: relative
+    width: 100%;
+    bottom: 0;
+    background-color: black;
     color: white;
-    padding: 3vh 0 0;
-    justify-content: center;
+    padding: 2vh 0 1vh;
 }
 
 h1 {

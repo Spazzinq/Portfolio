@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="https://spazzinq.org/resources/icon.png" type="image/x-icon">
+    <link rel="icon" href="https://spazzinq.org/resources/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="msapplication-TileColor" content="#383838">
+    <meta name="theme-color" content="#383838">
+    <meta property="og:site_name" content="Spazzinq">
+    <meta property="og:image" content="https://spazzinq.org/resources/icon.png">
+    <meta property="og:type" content="website">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--    Modified per folder-->
+    <link type="text/css" rel="stylesheet" href="../resources/main.css"/>
+    <link type="text/css" rel="stylesheet" href="flightcontrol.css"/>
+    <script>
+        $(function() {
+            $("header").load("../resources/header.html");
+            $("footer").load("../resources/footer.html");
+        });
+    </script>
+    <!--    Modified per html-->
+    <meta property="og:url" content="https://spazzinq.org/flightcontrol/placeholders">
+    <title>FlightControl Placeholders</title>
+    <meta property="og:title" content="FlightControl Placeholders">
+    <meta property="og:description" content="A descriptive list of FlightControl's placeholders">
+    <meta name="description" content="A descriptive list of FlightControl's placeholders">
+</head>
+
+<body>
+    <header></header>
+    <div class="content">
+        <div class="title">
+            <h1>FlightControl Placeholders</h1>
+            <a style="font-size: 25px;" class="highlight" href="https://www.spigotmc.org/resources/55168/" target="_blank">Plugin Page</a>
+            <br><br>
+            <p>
+                You MUST be using either <a class="highlight" href="https://www.spigotmc.org/resources/6245/" target="_blank">PlaceholderAPI</a> or <a class="highlight" href="https://www.spigotmc.org/resources/11182" target="_blank">MVdWPlaceholderAPI</a> for these placeholders to work.<br>Those plugins use different types of characters to surround their placeholders<br> (PlaceholderAPI: %flightcontrol_tempfly_short%, MVdW: {flightcontrol_tempfly_short}).<br>MVdWPlaceholderAPI <b>only works if you have one of their premium plugins bought</b>,<br>so I suggest using PlaceholderAPI if you have not already purchased one of MVdW's plugins.<br> Join the <a class="highlight" href="https://spazzinq.org/discord" target="_blank">Support Discord</a> if you need help.
+            </p>
+        </div>
+        <table>
+            <tr><td>flightcontrol_tempfly_short</td><td>Returns the duration of tempfly left in shortened format (e.g. 4m 3s)</td></tr>
+            <tr><td>flightcontrol_tempfly_long</td><td>Returns the duration of tempfly left in normal format (e.g. 4 minutes, 3 seconds)</td></tr>
+            <tr><td>flightcontrol_tempfly_s</td><td>Returns the duration of tempfly left in seconds</td></tr>
+            <tr><td>flightcontrol_tempfly_m</td><td>Returns the duration of tempfly left in minutes</td></tr>
+            <tr><td>flightcontrol_tempfly_h</td><td>Returns the duration of tempfly left in hours</td></tr>
+            <tr><td>flightcontrol_tempfly_d</td><td>Returns the duration of tempfly left in days</td></tr>
+            <tr><td>flightcontrol_flying</td><td>Returns if a player is flying as a boolean ("true" or "false")</td></tr>
+        </table>
+    </div>
+    <footer></footer>
+</body>
+</html>
