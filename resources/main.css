@@ -12,7 +12,9 @@ a {
 }
 
 #socials a {
-    margin: 0 10px;
+    margin: 0 5px;
+    position: relative;
+    top: 5px;
 }
 
 
@@ -92,7 +94,7 @@ header img {
 }
 
 nav ul {
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 body {
@@ -111,7 +113,7 @@ h1 {
 }
 
 nav li {
-    margin: 10px;
+    margin: 15px 3vw;
 }
 
 #projects img {
