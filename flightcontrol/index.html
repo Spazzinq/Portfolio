@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="msapplication-TileColor" content="#383838">
-    <meta name="theme-color" content="#383838">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <meta property="og:site_name" content="Spazzinq">
     <meta property="og:image" content="https://spazzinq.org/resources/icon.png">
     <meta property="og:type" content="website">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <!--    Modified per folder-->
     <link type="text/css" rel="stylesheet" href="../resources/main.css" />
     <link type="text/css" rel="stylesheet" href="flightcontrol.css" />
@@ -30,11 +31,16 @@
     <meta name="description" content="FlightControl landing page">
 </head>
 
-<body>
+<body style="
+    background-image: url('../resources/backgrounds/2020-05-30_15.29.48.png'); background-repeat: no-repeat; background-attachment: fixed;">
     <header></header>
-    <div class="title" style="padding: 18vh 0 17vh;">
-        <h1 id="name" style="display: inline;">FlightC<a href="https://www.spigotmc.org/resources/55168/" target="_blank"><img id="logo-in-text" src="https://spazzinq.org/resources/flightcontrol/flightcontrol-120.png" alt="FlightControl logo"></a>ntrol</h1>
+    <div class="main" style="padding: 18vh 0 17vh;">
+        <h1 class="name" style="display: inline;">FlightC<a href="https://www.spigotmc.org/resources/55168/" target="_blank"><img id="logo-in-text" src="https://spazzinq.org/resources/flightcontrol/flightcontrol-120.png" alt="FlightControl logo"></a>ntrol</h1>
         <br>
+        <div class="typed-strings">
+            <p><i>An elegant solution for controlling player flight.</i></p>
+        </div>
+        <span class="typed"></span>
         <ul id="fclinks">
             <li>
                 <a class="highlight" href="https://spazzinq.org/flightcontrol/placeholders" target="_blank">Placeholders</a>
@@ -48,5 +54,9 @@
         </ul>
         <br>
     </div>
+    <div>
+        <h1 style="margin: auto;">What is FlightControl?</h1>
+    </div>
     <footer></footer>
-</body></html>
+</body>
+<script src="../resources/typing.js"></script></html>

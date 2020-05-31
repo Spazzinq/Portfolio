@@ -1,5 +1,4 @@
 .content {
-    background-color: #efefef;
     position: relative;
     animation: appear .7s .1s forwards;
     padding: 0 0 10vh;
@@ -102,4 +101,9 @@ p {
     width: 53px;
     height: 53px;
 }
+}
+
+.fixed {
+    position: fixed;
+    z-index: 1;
 }
