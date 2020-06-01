@@ -1,13 +1,12 @@
 .content {
     position: relative;
     animation: appear .7s .1s forwards;
-    padding: 0 0 10vh;
 }
 
 table {
     color: black;
     border-collapse: collapse;
-    margin: auto;
+    margin: 5vh auto;
     text-align: left;
     width: 70%;
     max-width: 1080px;
@@ -101,9 +100,4 @@ p {
     width: 53px;
     height: 53px;
 }
-}
-
-.fixed {
-    position: fixed;
-    z-index: 1;
 }

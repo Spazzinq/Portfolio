@@ -13,10 +13,6 @@ html {
 body {
     /* Remove default user agent margins */
     margin: 0;
-    
-    background-image: url("beacc");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 header {
@@ -96,8 +92,18 @@ header img {
 .main {
     text-align: center;
     background-color: var(--main-color);
-    padding: 100px 50px 100px;
-    margin: 0 0 5em;
+    padding: 10em 0 100px;
+}
+
+.scroll {
+    text-align: center;
+    color: white;
+    /*  TODO Remove bottom margin when adding content */
+    margin: 20vh 0 20vh;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .highlight {
