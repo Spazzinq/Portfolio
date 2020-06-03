@@ -208,7 +208,7 @@ twitter-widget {
 
 @media screen and (orientation: portrait),(min-width: 1250px) {
     .text-section {
-        padding: 15vh 30vh 20vh;
+        padding: 10vh 30vh 10vh;
     }
 }
 
