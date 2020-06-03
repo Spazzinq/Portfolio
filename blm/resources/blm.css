@@ -1,10 +1,12 @@
 :root {
     --nav-color: #e2e2e2;
-    --background-color: #222222;
+    --background-color: #33322e;
     --main-color: #d3d3d3;
     --highlight-color: #1873ff;
     --light-highlight-color: #4d93ff;
     --footer-color: #efefef;
+    --scroll-color: #ebeb15;
+    --scroll-shadow-color: black;
 }
 
 html {
@@ -103,6 +105,12 @@ header img {
     margin: 5vh 0 5vh;
 }
 
+.scroll h1 {
+    font-size: 100px;
+    color: var(--scroll-color);
+    text-shadow: -4px 4px var(--scroll-shadow-color);
+}
+
 .text-center {
     text-align: center;
 }
@@ -133,7 +141,7 @@ header img {
 }
 
 .name {
-    font-size: 100px;
+    font-size: 10vw;
     margin: 20px 0;
 }
 
@@ -149,7 +157,59 @@ header img {
 .text-section {
     background-color: black;
     color: white;
-    padding: 15vh 10vh 20vh;
+    padding: 10vh 10vh 20vh;
+}
+
+.main-line {
+    padding: 0 0 3vh;
+}
+
+.lead-in {
+    font-size: 40px;
+}
+
+.mini-in {
+    font-size: 20px;
+}
+
+div ul {
+    margin: 0 2vh;
+}
+
+.typed .highlight {
+    color: black;
+    background-image:
+        linear-gradient(var(--light-highlight-color) 30%, transparent 0);
+    
+}
+.typed .highlight:hover {
+    background-color: var(--light-highlight-color);
+}
+
+twitter-widget {
+    margin: auto;
+}
+
+.indent {
+    margin: 0 2vh;
+}
+
+.box {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 2vh;
+}
+
+@media screen and (orientation: portrait),(max-width: 1150px) {
+    .socials {
+        display: none;
+    }
+}
+
+@media screen and (orientation: portrait),(min-width: 1250px) {
+    .text-section {
+        padding: 15vh 30vh 20vh;
+    }
 }
 
 @media screen and (orientation: portrait),(max-width: 700px) {
@@ -178,6 +238,47 @@ header img {
         display: block;
         animation: reveal .4s;
     }
+    
+    .main {
+        padding: 25vh 7vw 15vh;
+    }
+    
+    .text-section {
+        padding: 40px 30px;
+    }
+    
+    .name {
+        font-size: 15vw;
+        margin: 0 0 20vh;
+    }
+    
+    .scroll h1 {
+        font-size: 13vw;
+    }
+    
+    .lead-in {
+        font-size: 6vw;
+    }
+    
+    .mini-in {
+        font-size: 4vw;
+    }
+    
+    div ul {
+        margin: 0 1vw;
+    }
+    
+    .indent {
+        margin: 0;
+    }
+    
+    .box {
+        
+    }
+    
+    .typed, .typed-cursor {
+        font-size: 5vw;
+    }
 
     nav ul {flex-direction: column;}
 
@@ -191,58 +292,7 @@ header img {
     }
 }
 
-@media screen and (orientation: portrait),(max-width: 1150px) {
-    .socials {
-        display: none;
-    }
-}
-
-@media screen and (orientation: portrait),(min-width: 1250px) {
-    .text-section {
-        padding: 15vh 30vh 20vh;
-    }
-}
-
-
 @keyframes reveal {
     from {opacity: 0}
     to {opacity: 1}
-}
-
-
-
-.main-line {
-    padding: 0 0 3vh;
-}
-
-.lead-in {
-    font-size: 40px;
-}
-
-.mini-in {
-    font-size: 20px;
-}
-
-div ul {
-    margin: 0 2vh;
-}
-
-.scroll h1 {
-    font-size: 100px;
-}
-
-
-
-.typed .highlight {
-    color: black;
-    background-image:
-        linear-gradient(var(--light-highlight-color) 30%, transparent 0);
-    
-}
-.typed .highlight:hover {
-    background-color: var(--light-highlight-color);
-}
-
-twitter-widget {
-    margin: auto;
 }
