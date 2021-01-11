@@ -1,8 +1,8 @@
 var options = {
      stringsElement: '.typed-strings',
      startDelay: 1000,
-     backDelay: 5000,
-     typeSpeed: 20,
+     backDelay: 1000,
+     typeSpeed: 25,
      smartBackspace: true
  };
 
