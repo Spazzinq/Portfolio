@@ -1,6 +1,6 @@
 .content {
     position: relative;
-    animation: appear 1s .1s forwards;
+    animation: appear .9s .1s forwards;
 }
 
 table {
