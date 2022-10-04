@@ -24,7 +24,7 @@ header {
 
 footer {
     background-color: var(--footer-color);
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--nav-color);
     padding: .5em;
 }
 
@@ -97,7 +97,6 @@ header img {
 
 .scroll {
     text-align: center;
-    color: white;
     /*  TODO Remove bottom margin when adding content */
     margin: 10vh 0 40vh;
 }
