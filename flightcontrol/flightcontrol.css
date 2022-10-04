@@ -1,6 +1,6 @@
 .content {
     position: relative;
-    animation: appear .7s .1s forwards;
+    animation: appear 1s .1s forwards;
 }
 
 table {
@@ -27,40 +27,18 @@ tr:nth-child(even) {
 }
 
 @keyframes appear {
-    from {
+    0% {
         opacity: 0;
         top: 4vw;
     }
 
-    to {
-        opacity: 1;
-        top: 0;
-    }
-}
-
-@keyframes rainbow {
-    0% {
-        color: red;
-    }
-
-    20% {
-        color: orange;
-    }
-
-    40% {
-        color: darkseagreen;
-    }
-
-    60% {
-        color: green;
-    }
-
-    80% {
-        color: blue;
+    50% {
+        opacity: 0.1;
     }
 
     100% {
-        color: purple;
+        opacity: 1;
+        top: 0;
     }
 }
 
