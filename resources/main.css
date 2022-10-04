@@ -25,8 +25,8 @@ header {
 footer {
     background-color: var(--footer-color);
     color: var(--nav-color);
-    padding: .5em;
-    margin: 10vh 0 40vh;
+    text-align: center;
+    padding: 10vh 0 40vh;
 }
 
 a {
