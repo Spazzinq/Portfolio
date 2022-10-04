@@ -3,7 +3,7 @@
     --background-color: white;
     --main-color: #efefef;
     --highlight-color: #cce0ff;
-    --footer-color: #efefef;
+    --footer-color: white;
 }
 
 html {
@@ -26,6 +26,7 @@ footer {
     background-color: var(--footer-color);
     color: var(--nav-color);
     padding: .5em;
+    margin: 10vh 0 40vh;
 }
 
 a {
@@ -97,6 +98,7 @@ header img {
 
 .scroll {
     text-align: center;
+    color: white;
     /*  TODO Remove bottom margin when adding content */
     margin: 10vh 0 40vh;
 }
