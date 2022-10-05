@@ -26,7 +26,7 @@ footer {
     background-color: var(--footer-color);
     color: var(--nav-color);
     text-align: center;
-    padding: 10vh 0 10vh;
+    padding: 10vh 0 7vh;
 }
 
 a {
@@ -132,12 +132,12 @@ header img {
 }
 
 .name {
-    font-size: 100px;
+    font-size: 10vw;
     margin: 20px 0;
 }
 
 .typed, .typed-cursor {
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 .main img:hover {
@@ -173,8 +173,12 @@ header img {
     nav ul {flex-direction: column;}
 
 
-    #name {
-        font-size: 70px;
+    .name {
+        font-size: 17vw;
+    }
+
+    .typed, .typed-cursor {
+        font-size: 6vw;
     }
 
     .logo {
