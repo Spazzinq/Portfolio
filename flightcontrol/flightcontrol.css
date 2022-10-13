@@ -21,11 +21,6 @@ tr:nth-child(even) {
     background-color: #d8d8d8;
 }
 
-.rainbow {
-    font-weight: bold;
-    animation: rainbow 3s infinite;
-}
-
 @keyframes appear {
     0% {
         opacity: 0;
@@ -57,25 +52,20 @@ p {
     margin: 0;
 }
 
-#fclinks {
-    justify-content: center;
-}
-
-#fclinks li {
-    margin: 30px;
-    font-size: 25px;
-}
-
 #logo-in-text {
     vertical-align: middle;
-    width: 73px;
-    height: 73px;
+    width: 7vw;
+    height: 7vw;
 }
 
 @media screen and (orientation: portrait),
 (max-width: 700px) {
+    .name {
+        font-size: 13vw;
+    }
+    
     #logo-in-text {
-    width: 53px;
-    height: 53px;
-}
+        width: 9vw;
+        height: 9vw;
+    }
 }

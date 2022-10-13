@@ -136,7 +136,12 @@ header img {
     margin: 20px 0;
 }
 
-.typed, .typed-cursor {
+.main-links {
+    justify-content: center;
+}
+
+.main-links li {
+    margin: 1vw 5vw;
     font-size: 3vw;
 }
 
@@ -155,7 +160,7 @@ header img {
     }
     
     .toggled .bar-top, .toggled .bar-mid, .toggled .bar-bottom {
-        background-color: var(--nav-color)
+        background-color: var(--nav-color);
     }
 
     .toggled .bar-top {transform: translateY(10px);}
@@ -177,8 +182,8 @@ header img {
         font-size: 17vw;
     }
 
-    .typed, .typed-cursor {
-        font-size: 6vw;
+    .main-links li {
+        font-size: 4vw;
     }
 
     .logo {
@@ -187,6 +192,7 @@ header img {
 }
 
 @media screen and (orientation: portrait),(max-width: 1150px) {
+    /* Hide social media when the display is not large enough */
     .socials {
         display: none;
     }
