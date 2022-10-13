@@ -136,18 +136,22 @@ header img {
     margin: 20px 0;
 }
 
+.main img:hover, header img:hover {
+    transform: rotate(360deg);
+    transition: all 1s cubic-bezier(.4, .53, .28, 1.05);
+}
+
 .main-links {
     justify-content: center;
 }
 
 .main-links li {
-    margin: 1vw 5vw;
+    margin: 1vw 2vw;
     font-size: 3vw;
 }
 
-.main img:hover {
-    transform: rotate(360deg);
-    transition: all 1s cubic-bezier(.4, .53, .28, 1.05);
+.tagline {
+    font-size: 3vw;
 }
 
 @media screen and (orientation: portrait),(max-width: 700px) {
