@@ -68,4 +68,8 @@ p {
         width: 9vw;
         height: 9vw;
     }
+
+    .tagline {
+        font-size: 7vw;
+    }
 }
