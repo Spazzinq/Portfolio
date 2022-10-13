@@ -133,7 +133,7 @@ header img {
 
 .name {
     font-size: 10vw;
-    margin: 20px 0;
+    margin: 1vh 0 0;
 }
 
 .main img:hover, header img:hover {
@@ -143,10 +143,11 @@ header img {
 
 .main-links {
     justify-content: center;
+    margin: 5vh 0 0;
 }
 
 .main-links li {
-    margin: 1vw 2vw;
+    margin: 0 2vw;
     font-size: 3vw;
 }
 
